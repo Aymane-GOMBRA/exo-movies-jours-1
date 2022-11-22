@@ -26,13 +26,8 @@ const Movie = ({ film, index }) => {
     }
 
     return (
-        <div style={{
-            width: "300px",
-            margin: "10px",
-            padding: "10px",
-            border: "solid 1px black"
-        }}>
-            {film.name} {film.year}
+        <div>
+            <h2>{film.name} {film.year}</h2>
             <button onClick={handleClickDelete}>X</button>
             {
                 index !== films.length - 1 &&

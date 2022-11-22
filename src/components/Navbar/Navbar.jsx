@@ -12,6 +12,9 @@ const Navbar = () => {
                 <li>
                     <NavLink to="/movies">Movies</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/computers">Computers</NavLink>
+                </li>
             </ul>
         </nav>
     )
