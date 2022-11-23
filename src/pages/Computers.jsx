@@ -32,11 +32,6 @@ const Computers = () => {
             <div style={{ display: "flex" }}>
                 {
                     computers.map((computer, i) => (
-                        // <div key={i} style={{ border: "black solid 1px", padding: "10px", margin: "5px", backgroundColor: "whitesmoke" }}>
-                        //     <h2> {computer.name} </h2>
-                        //     <h3> {computer.brand} </h3>
-                        //     <p> {computer.description} </p>
-                        // </div>
                         <Card key={i}>
                             {computer.name} <br />
                             {computer.brand} <br />

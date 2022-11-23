@@ -24,6 +24,9 @@ const Navbar = () => {
                 <li>
                     <NavLink to="/calendar">Calendar</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/counter">Counter</NavLink>
+                </li>
             </ul>
         </nav>
     )

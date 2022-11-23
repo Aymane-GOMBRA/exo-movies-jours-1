@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Number = ({ number, borderColor }) => {
     const [background, setBackground] = useState('white')
-    console.log('rendu' + number);
+    // console.log('rendu' + number);
     return (
         <div
             style={{
@@ -13,7 +13,7 @@ const Number = ({ number, borderColor }) => {
     )
 }
 const numberComparator = (prevProps, nextProps) => {
-    // console.log(prevProps, nextProps);
+    console.log(prevProps, nextProps);
     if (prevProps.borderColor !== nextProps.borderColor) return false
     return true
 }

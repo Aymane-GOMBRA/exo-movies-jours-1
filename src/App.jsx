@@ -8,6 +8,7 @@ import Computers from './pages/Computers'
 import HOC from './pages/HOC'
 import Render from './pages/Render'
 import Calendar from './pages/Calendar'
+import Counter from './pages/Counter'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/hoc' element={<HOC />} />
         <Route path='/render' element={<Render />} />
         <Route path='/calendar' element={<Calendar />} />
+        <Route path='/counter' element={<Counter />} />
       </Routes>
     </>
   )
