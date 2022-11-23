@@ -35,7 +35,9 @@ const Month = ({ date }) => {
     }, [])
 
     return (
-        <div>
+        <div style={{
+            justifyContent: "center"
+        }}>
             <h1>Day</h1>
             <button onClick={() => setToday(!today)}>Today</button>
             {
