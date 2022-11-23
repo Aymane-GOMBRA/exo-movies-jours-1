@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
+import Card from '../hoc/Card';
 
 const Computers = () => {
     const { register, handleSubmit, reset, formState: { errors }, setValue, getValues } = useForm();
@@ -31,11 +32,16 @@ const Computers = () => {
             <div style={{ display: "flex" }}>
                 {
                     computers.map((computer, i) => (
-                        <div key={i} style={{ border: "black solid 1px", padding: "10px", margin: "5px", backgroundColor: "whitesmoke" }}>
-                            <h2> {computer.name} </h2>
-                            <h3> {computer.brand} </h3>
-                            <p> {computer.description} </p>
-                        </div>
+                        // <div key={i} style={{ border: "black solid 1px", padding: "10px", margin: "5px", backgroundColor: "whitesmoke" }}>
+                        //     <h2> {computer.name} </h2>
+                        //     <h3> {computer.brand} </h3>
+                        //     <p> {computer.description} </p>
+                        // </div>
+                        <Card key={i}>
+                            {computer.name} <br />
+                            {computer.brand} <br />
+                            {computer.description}
+                        </Card>
                     ))
                 }
             </div>
